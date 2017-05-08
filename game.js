@@ -31,19 +31,15 @@ function install_keys() {
                                           title = false;
                     if (key === 37) {
                         x1-=1;
-                        leftpress = true;
                     }
                     if (key === 38) {
                         y1-=1;
-                        uppress = true;
                     }
                     if (key === 39) {
                         x1+=1;
-                        rightpress = true;
                     }
                     if (key === 40) {
                         y1+=1;
-                        downpress = true;
                     }
                     
                     
@@ -62,26 +58,7 @@ function install_keys() {
 
                 });
                 
-            
-                document.addEventListener('keyup', function(e) {
-                    var key = e.which || e.keyCode;
-                    if (key === 37) {
-                        leftpress = false;
-                    }
-                    if (key === 38) {
-                        uppress = false;
 
-                    }
-                    if (key === 39) {
-                        rightpress = false;
-
-                    }
-                    if (key === 40) {
-                        downpress = false;
-
-                    }
-                });    
-                
 }
      
     
